@@ -5,7 +5,7 @@ https://qiita.com/naotoritty/items/77bef5021cad5feba00d
 vue create プロジェクト名までやる  
 
 ### 環境構築②
-①manually selectを選択  
+①manually selectを選択 最初の選択肢はrouterにチェック  
 ②vueの2xx系を選択  
 ③後はお好みでOK  
 
