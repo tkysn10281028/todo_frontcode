@@ -26,8 +26,10 @@ export default {
     submit() {
       this.axios
         .post("http://localhost:8082/", {
-          emailaddress: this.emailaddress,
-          password: this.password,
+          User: {
+            emailaddress: this.emailaddress,
+            password: this.password,
+          },
         })
         .then(function (response) {
           console.log(response);
