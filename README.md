@@ -9,5 +9,9 @@ vue create プロジェクト名までやる
 ②vueの2xx系を選択  
 ③後はお好みでOK  
 
+### 環境構築③
+https://qiita.com/right1121/items/092ac7ff747e1c47b2b1  
+を参考にaxiosを導入。コマンドは必ずnpm install --save axios vue-axiosで。  
+(vue add axiosってやると変なプラグインが入って動かなくなった)
 ### 起動
 npm run serveしてみてデフォルトの画面が表示されるか確認  
