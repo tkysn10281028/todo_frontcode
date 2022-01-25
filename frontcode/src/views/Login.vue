@@ -27,7 +27,7 @@ export default {
           var name = response.data.username;
           if (name != null) {
             window.alert("ようこそ" + name + "さん！");
-            this.$router.push();
+            this.$router.push("/todo/undone");
           }
         })
         .catch((error) => {

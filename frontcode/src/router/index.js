@@ -45,22 +45,22 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/Activate.vue')
   },
-  // {
-  //   path: '/todo/undone',
-  //   name: 'Undone',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/Undone.vue')
-  // },
-  // {
-  //   path: '/todo/done',
-  //   name: 'Done',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/Done.vue')
-  // },
+  {
+    path: '/todo/undone',
+    name: 'Undone',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Undone.vue')
+  },
+  {
+    path: '/todo/done',
+    name: 'Done',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Done.vue')
+  },
 
 
 

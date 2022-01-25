@@ -8,6 +8,7 @@
       <router-link to="/login">Login</router-link>
       <router-link to="/logout">Logout</router-link>
       <router-link to="/signup">SignUp</router-link>
+      <router-link to="/todo/undone">List</router-link>
     </div>
   </div>
 </template>
