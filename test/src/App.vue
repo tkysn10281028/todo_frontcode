@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <router-view></router-view>
-    <Menu></Menu>
+    <Welcome></Welcome>
   </div>
 </template>
+
 <script>
-import Menu from "./components/Menu.vue";
+import Welcome from "../components/Welcome.vue";
 export default {
-  components: { Menu },
+  components: { Welcome },
 };
 </script>
 
