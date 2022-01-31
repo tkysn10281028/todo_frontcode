@@ -5,7 +5,7 @@
 export default {
   created: function () {
     window.alert("ログアウトしました。");
-    this.axios.get("http://localhost:8082/logout");
+    this.axios.get("http://white.source.oysterworld.jp/mytodo/logout");
   },
 };
 </script>

@@ -17,7 +17,7 @@ export default {
       params.append("inputactivatecode", this.inputactivatecode); // 渡したいデータ分だけappendする
       this.axios
         .post(
-          "http://localhost:8082/user/signup",
+          "http://white.source.oysterworld.jp/mytodo/user/signup",
           params,
           this.serverPass + "login"
         )

@@ -45,7 +45,7 @@ export default {
     getTodos() {
       this.todolist.splice(0, this.todolist.length);
       this.axios
-        .get("http://localhost:8082/todo/read")
+        .get("http://white.source.oysterworld.jp/mytodo/todo/read")
         .then((response) => {
           console.log(response);
           for (let i = 0; i < response.data.length; i++) {
@@ -83,7 +83,7 @@ export default {
       params.append("todo", this.todo); // 渡したいデータ分だけappendする
       this.axios
         .post(
-          "http://localhost:8082/todo/create",
+          "http://white.source.oysterworld.jp/mytodo/todo/create",
           params,
           this.serverPass + "login"
         )
@@ -112,7 +112,7 @@ export default {
 
       this.axios
         .post(
-          "http://localhost:8082/todo/delete",
+          "http://white.source.oysterworld.jp/mytodo/todo/delete",
           params,
           this.serverPass + "login"
         )
@@ -142,7 +142,7 @@ export default {
         params.append("time", item.updatetime);
         this.axios
           .post(
-            "http://localhost:8082/todo/update",
+            "http://white.source.oysterworld.jp/mytodo/todo/update",
             params,
             this.serverPass + "login"
           )
@@ -159,11 +159,7 @@ export default {
   },
 };
 </script>
-
-
-
-
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

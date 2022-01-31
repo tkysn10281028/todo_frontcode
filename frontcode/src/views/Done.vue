@@ -39,7 +39,7 @@ export default {
   methods: {
     getTodos() {
       this.axios
-        .get("http://localhost:8082/todo/read")
+        .get("http://white.source.oysterworld.jp/mytodo/todo/read")
         .then((response) => {
           this.todolist.splice(0, response.data.length);
           console.log(response);
@@ -78,7 +78,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

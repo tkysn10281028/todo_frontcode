@@ -68,7 +68,7 @@ export default {
         params.append("username", this.username);
         this.axios
           .post(
-            "http://localhost:8082/user/signup/activate",
+            "http://white.source.oysterworld.jp/mytodo/user/signup/activate",
             params,
             this.serverPass + "login"
           )

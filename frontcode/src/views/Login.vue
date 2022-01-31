@@ -22,7 +22,11 @@ export default {
       params.append("emailaddress", this.emailaddress); // 渡したいデータ分だけappendする
       params.append("password", this.password);
       this.axios
-        .post("http://localhost:8082/", params, this.serverPass + "login")
+        .post(
+          "http://white.source.oysterworld.jp/mytodo/",
+          params,
+          this.serverPass + "login"
+        )
         .then((response) => {
           var name = response.data.username;
           if (name != null) {
